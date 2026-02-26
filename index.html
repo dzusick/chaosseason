@@ -1,0 +1,88 @@
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>startingrn!</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+        background: black;
+        display: flex;
+        justify-content: center;
+        filter: invert(1) hue-rotate(180deg);
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .container {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .background {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .gif-top {
+        position: absolute;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 700px;
+        z-index: 3;
+    }
+
+    .gif-top img {
+        width: 100%;
+        display: block;
+    }
+
+    .bottom-text {
+        position: fixed;
+        bottom: -350px;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 28px;
+        z-index: 10;
+        pointer-events: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <img src="background.png" class="background">
+    <img src="literallydrippingblood.png" class="overlay">
+
+    <div class="gif-top">
+        <img src="chaosseason.gif">
+    </div>
+</div>
+
+<div class="bottom-text">
+More Chaos
+</div>
+
+</body>
+</html>
