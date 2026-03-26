@@ -1,88 +1,43 @@
-<html lang="uk">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>startingrn!</title>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
+  <meta charset="UTF-8">
+  <title>ion what tf i should do</title>
+  <style>
     body {
-        overflow-x: hidden;
-        background: black;
-        display: flex;
-        justify-content: center;
-        filter: invert(1) hue-rotate(180deg);
-        min-height: 100vh;
-        position: relative;
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    .container {
-        position: relative;
-        max-width: 1000px;
-        width: 100%;
-        margin: 0;
+    video {
+      width: 80%;
+      height: 80%;
     }
-
-    .background {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        pointer-events: none;
-    }
-
-    .gif-top {
-        position: absolute;
-        top: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 400px;
-        z-index: 3;
-    }
-
-    .gif-top img {
-        width: 100%;
-        display: block;
-    }
-
-    .bottom-text {
-        position: fixed;
-        bottom: -350px;
-        width: 100%;
-        text-align: center;
-        color: black;
-        font-size: 28px;
-        z-index: 10;
-        pointer-events: none;
-    }
-</style>
+  </style>
 </head>
-
 <body>
 
-<div class="container">
-    <img src="background.png" class="background">
-    <img src="literallydrippingblood.png" class="overlay">
+  <video autoplay loop muted>
+    <source src="afterlyfee.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    <div class="gif-top">
-        <img src="chaosseason.gif">
-    </div>
-</div>
+  <audio id="audio">
+    <source src="woayeat.mp3" type="audio/mpeg">
+  </audio>
 
-<div class="bottom-text">
-i feel good lowk
-</div>
+  <script>
+    const audio = document.getElementById('audio');
+
+    document.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
 
 </body>
 </html>
